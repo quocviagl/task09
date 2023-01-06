@@ -1,24 +1,33 @@
 {
-  "linklists": {
+  "linklists": 
+  {
     "main": [
       {
-        "title": "Home",
-        "url": "/"
+        "title": "私たちについて",
+        "url": "#about"
       },
       {
-        "title": "About",
-        "url": "/about.html"
+        "title": "私たちの仕事",
+        "url": "#works"
       },
       {
-        "title": "Nested 1",
-        "url": "/nested/",
-        "links": [
-          {
-            "title": "Nested 2",
-            "url": "/nested/nested/"
-          }
-        ]
+        "title": "キャリアプラン",
+        "url": "#career"
+      },
+      {
+        "title": "社員インタビュー",
+        "url": "#intaview"
+      },
+      {
+        "title": "会社情報",
+        "url": "#company"
+      }
+    ],
+    "subpage":[
+      {
+        "title": "募集要項",
+        "url": "#recruit"
       }
     ]
-  }
+    }
 }

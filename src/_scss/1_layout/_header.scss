@@ -1,29 +1,84 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
+    position: fixed;
+    width: 100%;
+    background-color: $color-white;
+}
+
+.c-header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 12px 21px;
     position: relative;
     background: rgba(255, 255, 255, 0.9);
-}
-/* Main menu
-------------------------------------------------------------*/
-.c-gnav {
-    ul {
+
+    .c-header__logo {
+        margin-right: 50px;
     }
 
-    li {
-        display: inline-block;
+    .c-gnav {
+        .c-gnav__menu {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .c-gnav__item {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+    
+            &:nth-child(2) {
+                position: relative;
+                top: 2px;
+                left: -2px;
+            }
 
-        + li {
-            margin-left: 20px;
+            &:nth-child(3) {
+                position: relative;
+                left: 5px;
+            }
+
+            &:nth-child(4) {
+                position: relative;
+                left: 2px;
+                top: 2px;
+            }
+        }
+
+        .c-gnav__link {
+            display: inline-block;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $text-main-color;
+            text-align: center;
+            padding: 16px 10px 12px;
+        }
+        
+    }
+    
+    .c-gnav__recruit {
+        display: inline-flex;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $color-white;
+        background-color: $text-main-color;
+        text-align: center;
+        padding: 11px 41px 12px 35px;
+        margin-top: 5px;
+        align-items: center;
+        letter-spacing: 2px;
+        border-radius: 10px;
+
+        &::before {
+            display: block;
+            content: "";
+            background: url("./assets/img/recruitment.svg") no-repeat;
+            width: 20px;
+            height: 20px;
+            padding-right: 8px;
         }
     }
-
-    a {
-        font-size: 1.6rem;
-        text-transform: capitalize;
-    }
 }
+
