@@ -1,15 +1,15 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       <%= (typeof title != "undefined" ? title : "Page title") %>
     </title>
     {{ meta }}
-    <script type="module" src="/_scss/style.js"></script>
+    <script type="module" src="./_scss/style.js"></script>
     {{ head }}
   </head>
   <body>
@@ -21,6 +21,6 @@
     <%- include('_partials/footer'); -%>
 
     {{ script }}
-    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
