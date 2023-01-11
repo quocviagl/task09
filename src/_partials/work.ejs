@@ -1,0 +1,32 @@
+<section class="p-work l-container--1200 " id="work">
+  <div class="c-work">
+    <div class="c-work__heading">
+        <h2 class="c-work__title"><%= work.title%></h2>
+        <h3 class="c-work__subtitle"><%- work.subtitle%></h3>
+    </div>
+      <div class="c-work__wrapper ">
+        <div class="c-work__imgbox">
+          <% if (typeof work != 'undefined') { %>
+            <% work.imgs && work.imgs.forEach(img => { %>
+                <img src="<%= img.url %>" alt="<%= work.listtitle %> " class="c-work__img">
+            <%})%>
+          <%}%>
+        </div>
+        <div class="c-work__text">
+          <h4 class="c-work__listtitle u-textblue"><%= work.listtitle %></h4>
+          <p class="c-work__listsubtitle"><%= work.listsubtitle %></p>
+          <div class="c-work__list">
+              <% if (typeof work != 'undefined') { %>
+                  <% work.workitems && work.workitems.forEach(item => { %>
+                      <div class="c-work__item">
+                          <span class="c-work__id"><%= item.id %></span>
+                          <p class="c-work__description"><%= item.text %></p>
+                      </div>
+                  <% }) %>
+              <%}%>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+  

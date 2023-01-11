@@ -1,0 +1,120 @@
+.p-work {
+    margin-top: 192px;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-color: #eff3f5;
+        width: 76.75%;
+        height: 84.5%;
+        position: absolute;
+        top: 15.5%;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+
+.c-work__heading {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    .c-work__title {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.074em;
+        margin-bottom: 8px;
+    }
+
+    .c-work__subtitle {
+        line-height: 1.7;
+    }
+
+}
+
+.c-work__wrapper {
+    display: flex;
+    margin-top: 58px;
+    padding: 0 78px 0 120px;
+
+    .c-work__imgbox {
+        max-width: 400px;
+        width: 100%;
+        margin-right: 40px;
+    }
+
+    .c-work__text {
+        padding-top: 92px;
+    }
+
+    .c-work__item {
+        display: flex;
+        max-width: 560px;
+        width: 100%;
+        align-items: center;
+        border: 1px solid #0080cc;
+
+        &:first-child {
+            margin-top: 32px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 21px;
+        }
+
+        &:not(:first-child) {
+            .c-work__description {
+                padding-left: 18px;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 22px;
+
+            .c-work__id {
+                padding: 26px 22px 26px 21px;
+            }
+
+            .c-work__description {
+                padding-right: 18px;
+            }
+        }
+
+        &:nth-child(6) {
+            margin-bottom: 22px;
+        }
+    }
+    
+    .c-work__listtitle {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.074em;
+        margin-bottom: 10px;
+    }
+
+    .c-work__listsubtitle {
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.024em;
+    }
+
+    .c-work__id {
+        font-size: 2rem;
+        font-weight: 300;
+        display: inline-flex;
+        background-color: #0080cc;
+        padding: 13px 22px 12px 21px;
+        color: #fff;
+    }
+
+    .c-work__description {
+        font-size: 1.8rem;
+        font-weight: 300;
+        display: inline-flex;
+        letter-spacing: 0.03em;
+        padding-left: 24px;
+    }
+}
+

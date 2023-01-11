@@ -5,14 +5,12 @@
 <!-- @@meta -->
 
 <!-- @content -->
-<main class="p-top">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-      <a href="<%= BASE_URL %>about.html" class="c-btn1">JOIN NOW</a>
-    </div>
-  </section>
+<main id="p-top">
+  <%- include('_partials/mainvisual'); -%>
+  <%- include('_partials/about'); -%>
+  <%- include('_partials/work'); -%>
+  <%- include('_partials/collection'); -%>
+
 </main>
 <!-- @@content -->
 

@@ -1,18 +1,18 @@
-<header class="c-header">
-  <div class="c-header__wrapper">
-    <h2 class="c-header__logo"><a href="./"><img src="/assets/img/logo.svg" alt="Entex Recruitment 2020"></a></h2>
+<header class="c-header u-bgwhite">
+  <div class="c-header__wrapper l-container--1200">
+    <h2 class="c-header__logo"><a href="./"><img src="./assets/img/logo.svg" alt="Entex Recruitment 2020"></a></h2>
     <nav class="c-gnav">
     <% if (typeof linklists != 'undefined') { %>
       <ul class="c-gnav__menu">
         <% linklists.main && linklists.main.forEach(link => { %>
           <li class="c-gnav__item">
-            <a class="c-gnav__link" <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+            <a class="c-gnav__link u-textblue " <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
           </li>
         <% }) %>
       </ul>
     </nav>
       <% linklists.subpage && linklists.subpage.forEach(item => { %>
-        <a class="c-gnav__recruit" <% if (item.current || item.active) { %>class="is-active"<% } %> href="<%= item.url %>"><%= item.title %></a>
+        <a class="c-gnav__recruit u-bgblue u-textwhite" <% if (item.current || item.active) { %>class="is-active"<% } %> href="<%= item.url %>"><%= item.title %></a>
     <% }) %>
     <%}%>
 

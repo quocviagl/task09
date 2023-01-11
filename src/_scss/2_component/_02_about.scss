@@ -1,0 +1,74 @@
+.p-about {
+    position: relative;
+
+    &::before {
+        content: "";
+        background-color: #0080cc;
+        width: 76.75%;
+        height: calc(100% + 99px);
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+
+    
+    .c-about__wrapper {
+        display: flex;
+        padding: 101px 50px 0;
+        justify-content: flex-end;
+    }
+    
+    .c-about__text {
+        max-width: 421px;
+        width: 100%;
+        margin-right: 39px;
+        margin-top: 3px;
+    
+    
+        .c-about__title {
+            font-size: 3.4rem;
+            font-weight: 500;
+            letter-spacing: 0.064em;
+        }
+    
+        .c-about__description {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-top: 16px;
+            letter-spacing: 0.024em;
+            line-height: 1.75;
+    
+            &:not(:first-child) {
+                margin-top: 28px;
+            }
+        }
+    }
+    
+    .c-about__imgbox {
+    
+        max-width: 570px;
+        width: 100%;
+    
+        .c-about__img {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: inherit;
+                height: inherit;
+                background-color: #0080cc;
+                left: 0;
+            }
+
+            &--top {
+                margin-bottom: 21px;
+
+            }
+        }
+    }
+
+}    
+
+
+

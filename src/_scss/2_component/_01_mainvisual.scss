@@ -1,0 +1,85 @@
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.c-mainvisual {
+    position: relative;
+
+    .c-mainvisual__inner {
+        position: absolute;
+        top: 27.8%;
+        z-index: 1000;
+        left: 120px;
+    }
+
+    .c-mainvisual__title {
+        font-size: 5rem;
+        font-weight: 500;
+        line-height: 1.65;
+        height: 242px;
+
+        &--span {
+            height: calc((100% - 34px) / 3);
+            letter-spacing: 0.11em;
+            position: relative;
+        }
+
+        &--top {
+            letter-spacing: 0.04em;
+            padding: 3px 5px 1px 8px;
+        }
+
+        &--middle {
+            padding: 4px 10px 0 8px;
+            top: 3px;
+            letter-spacing: 0.05em;
+        }
+
+        &--bottom {
+            top: 6px;
+            padding: 2px 0 2px 9px;
+            font-feature-settings: "palt" 1;
+        }
+    }
+
+    .c-mainvisual__scroll {
+        height: 95px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .c-mainvisual__scrolltext {
+        font-size: 2.6rem;
+        font-weight: 500;
+        letter-spacing: 0.069em;
+        margin: 1px 0 0 4px;
+
+        &--top {
+            text-transform: uppercase;
+            font-size: 2rem;
+            letter-spacing: 0.05em;
+            position: relative;
+            top: -54px;
+            left: -1px;
+            display: inline-block;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 47px;
+                left: 50%;
+                height: 30px;
+                width: 1px;
+                background-color: #0080cc;
+            }
+        }
+    }
+}

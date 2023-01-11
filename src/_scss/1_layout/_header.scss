@@ -1,9 +1,9 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    position: fixed;
+    position: sticky;
     width: 100%;
-    background-color: $color-white;
+    z-index: 100;
 }
 
 .c-header__wrapper {
@@ -11,7 +11,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 21px;
-    position: relative;
     background: rgba(255, 255, 255, 0.9);
 
     .c-header__logo {
@@ -51,7 +50,6 @@
             display: inline-block;
             font-size: 1.6rem;
             font-weight: 400;
-            color: $text-main-color;
             text-align: center;
             padding: 16px 10px 12px;
         }
@@ -62,8 +60,6 @@
         display: inline-flex;
         font-size: 1.8rem;
         font-weight: 500;
-        color: $color-white;
-        background-color: $btn-background;
         text-align: center;
         padding: 11px 41px 12px 35px;
         margin-top: 5px;

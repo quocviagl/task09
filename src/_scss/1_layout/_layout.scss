@@ -10,16 +10,35 @@ body {
     }
 }
 //-------------------------------------------------------
-main {
-    // padding: 0px 0 100px;
-}
+// main {
+//     // padding: 0px 0 100px;
+// }
 
-section {
-    padding: 50px 0 90px;
-}
+// section {
+//     padding: 50px 0 90px;
+// }
 
 //-------------------------------------------------------
+.l-container {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
 .l-container--1200 {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-container--880 {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-container--1140 {
+    max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
 }

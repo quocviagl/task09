@@ -1,0 +1,21 @@
+<section class="p-collection l-container--880" id="collection">
+    <div class="c-collection">
+        <div class="c-collection__heading">
+          <h2 class="c-collection__title u-textblue"><%=collection.title%></h2>
+          <p class="c-collection__description"><%=collection.description%></p>
+        </div>
+        <div class="c-collection__content">
+                <div class="c-collection__item c-collection__item--video">
+                    <video src="<%=collection.video%>" class="c-collection__video"></video>
+                </div>
+                <div class="c-collection__item c-collection__item--imgbox">
+                    <% if (typeof collection != 'undefined') { %>
+                        <% collection.imgs && collection.imgs.forEach(img => { %>
+                            <img src="<%= img.url %>" alt="<%= collection.title %> " class="c-collection__img">
+                            <%})%>
+                            <%}%>
+                </div>
+        </div>
+    </div>
+  </section>
+  

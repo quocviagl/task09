@@ -1,0 +1,28 @@
+<section class="c-mainvisual">
+  <div class="c-mainvisual__wrapper">
+    <div class="c-mainvisual__slider l-container">
+      <% if (typeof mainvisual != 'undefined') { %>
+          <% mainvisual.imgs && mainvisual.imgs.forEach(img => { %>
+            <img src="<%= img.url %>" alt="<%=img.alt%>" class="c-mainvisual__img">
+        <%})%>
+      <%}%>
+    </div>
+    <div class="c-mainvisual__text">
+      <div class="c-mainvisual__inner">
+        <h2 class="c-mainvisual__title u-textwhite">
+          <span class="c-mainvisual__title--span c-mainvisual__title--top u-bgblue"><%= mainvisual.title1%></span>
+          <br>
+          <span class="c-mainvisual__title--span c-mainvisual__title--middle u-bgblue"><%= mainvisual.title2%> </span>
+          <br>
+          <span class="c-mainvisual__title--span c-mainvisual__title--bottom u-bgblue"><%= mainvisual.title3%> </span>
+          <br>
+
+        </h2>
+      </div>
+      <div class="c-mainvisual__scroll l-container--960 u-bgwhite">
+        <p class="c-mainvisual__scrolltext c-mainvisual__scrolltext--top u-textblue">scroll</p>
+        <h3 class="c-mainvisual__scrolltext c-mainvisual__scrolltext--bottom"><span class="c-mainvisual__scrolltext--colored"><%=mainvisual.colortext%></span><%=mainvisual.scrolltext%></h3>
+      </div>
+    </div>
+  </div>
+</section>

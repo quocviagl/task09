@@ -1,0 +1,53 @@
+.c-collection {
+    margin-top: 90px;
+
+    .c-collection__heading {
+        text-align: center;
+
+        .c-collection__title {
+            font-size: 3.4rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .c-collection__description {
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0.024em;
+            margin-top: 12px;
+        }
+    }
+
+    .c-collection__content {
+        display: flex;
+        margin-top: 35px;
+        border: 1px solid #0080cc;
+        justify-content: center;
+
+    }
+
+    .c-collection__item {
+
+        position: relative;
+
+        &--video {
+            width: 100%;
+        }
+
+        &--imgbox {
+            display: flex;
+            flex-wrap: wrap;            
+        }
+
+        .c-collection__video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .c-collection__img {
+
+        }
+    }
+}
