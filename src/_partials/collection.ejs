@@ -2,16 +2,20 @@
     <div class="c-collection">
         <div class="c-collection__heading">
           <h2 class="c-collection__title u-textblue"><%=collection.title%></h2>
-          <p class="c-collection__description"><%=collection.description%></p>
+          <p class="c-collection__description u-textgray"><%=collection.description%></p>
         </div>
         <div class="c-collection__content">
                 <div class="c-collection__item c-collection__item--video">
-                    <video src="<%=collection.video%>" class="c-collection__video"></video>
+                    <video class="c-collection__video" controls="" data-ll-status="loaded">
+                    <source data-src="<%=collection.video%>" type="video/mp4" src="<%=collection.video%>">
+                    </video>
                 </div>
                 <div class="c-collection__item c-collection__item--imgbox">
                     <% if (typeof collection != 'undefined') { %>
                         <% collection.imgs && collection.imgs.forEach(img => { %>
-                            <img src="<%= img.url %>" alt="<%= collection.title %> " class="c-collection__img">
+                            <figure class="c-collection__img">
+                                <img src="<%= img.url %>" alt="<%= collection.title %> " class="">
+                            </figure>
                             <%})%>
                             <%}%>
                 </div>

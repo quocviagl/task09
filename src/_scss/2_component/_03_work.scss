@@ -30,13 +30,16 @@
 
     .c-work__subtitle {
         line-height: 1.7;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.024em;
     }
 
 }
 
 .c-work__wrapper {
     display: flex;
-    margin-top: 58px;
+    margin-top: 60px;
     padding: 0 78px 0 120px;
 
     .c-work__imgbox {
