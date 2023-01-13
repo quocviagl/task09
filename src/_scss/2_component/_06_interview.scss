@@ -1,0 +1,302 @@
+.p-interview {
+    margin-top: 90px;
+}
+
+.c-messages {
+    .c-messages__heading {
+        text-align: center;
+        padding-top: 3px;
+
+        .c-messages__title {
+            font-size: 4.4rem;
+            font-weight: 500;
+            letter-spacing: 0.074em;
+        }
+
+        .c-messages__subtitle {
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0.024em;
+            line-height: 1.7;
+            margin-top: 4px;
+        }
+    }
+
+    .c-messages__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 51px;
+    }
+
+    .c-messages__item {
+        border: 4px solid #0080cc;
+        max-height: 518px;
+        height: 100%;
+        width: calc((100% - 18px)/3);
+        position: relative;
+        transition: all 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            border-color: #005384;
+
+            .c-messages__info {
+                background-color: #005384;
+            }
+
+            .c-messages__itemimg {
+                &::after {
+                    opacity: 0.7;
+                }
+                
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:nth-child(1) {
+            .c-messages__info {
+                padding: 0 19px;
+            }
+
+            .c-messages__introduce {
+                margin-left: 17px;
+            }
+        }
+
+        &:nth-child(2) {
+            .c-messages__introduce {
+                margin-left: 21px;
+                line-height: 1.7;
+            }
+
+            .c-messages__itemtitle {
+                padding: 16px 32px 50px 24px;
+            }
+        }
+        
+        &:nth-child(3) {
+            .c-messages__exp {
+                letter-spacing: 0.17em;
+            }
+        }
+    }
+
+    .c-messages__itemimg {
+        &::before {
+            width: 100%;
+            height: calc(100% - 120px);
+            position: absolute;
+            content: "";
+            background: url("./assets/img/interview/hover.svg") no-repeat;
+            z-index: 2;
+            background-position: 50% 57%;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        &::after {
+            content: "";
+            height: calc(100% - 120px);
+            position: absolute;
+            background-color: #fff;
+            inset: 0;
+            z-index: 1;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+
+    }
+
+    .c-messages__img {
+        max-height: 390px;
+        width: 100%;
+        object-position: top;
+        object-fit: cover;
+    }
+
+    .c-messages__itemtitle {
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 0.024em;
+        padding: 16px 32px 50px 21px;
+    }
+
+    .c-messages__info {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        max-width: 294px;
+        max-height: 82px;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        transform: translate(-50%, 56%);
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .c-messages__arrow {
+        width: 24px;
+        height: 24px;
+    }
+
+    .c-messages__introduce {
+        margin-left: 19px;
+
+    }
+
+    .c-messages__name {
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 0.024em;
+    }
+
+    .c-messages__exp {
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 0.024em;
+    }
+    
+}
+
+.c-represent {
+    margin-top: 142px;
+
+    .c-represent__wrapper {
+        padding-top: 93px;
+    }
+
+    .c-represent__title {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.074em;
+    }
+
+    .c-represent__sharer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 41px;
+    }
+
+    .c-represent__text {
+        max-width: 630px;
+        width: 100%;
+    }
+
+    .c-represent__subtitle {
+        font-size: 2.4rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        margin-bottom: 27px;
+    }
+
+    .c-represent__description {
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+        line-height: 1.75;
+
+        &:nth-child(2) {
+            margin-top: 27px;
+        }
+        
+        &:nth-child(3) {
+            margin-top: 28px;
+        }
+
+        &:nth-child(5) {
+            margin-top: 27px;
+        }
+    }
+
+    .c-represent__feelbox {
+        margin-top: 30px;
+    }
+
+    .c-represent__feel {
+        font-size: 2.4rem;
+        font-weight: 500;
+        letter-spacing: 0.024em;
+        line-height: 1.9;
+    }
+
+    .c-represent__author {
+        font-size: 2.2rem;
+        font-weight: 500;
+        letter-spacing: 0.024em;
+        margin-top: 23px;
+    }
+
+    .c-represent__company {
+        padding-bottom: 88px;
+    }
+
+    .c-represent__companyname {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.074em;
+        margin-top: 47px;
+    }
+
+    .c-represent__explainbox {
+        display: flex;
+        padding: 43px 40px;
+        
+    }
+
+    .c-represent__logolink {
+        display: inline-flex;
+        max-width: 308px;
+        max-height: 116px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        padding: 31px 0;
+    }
+
+    .c-represent__logo {
+        object-fit: none;
+    }
+
+    .c-represent__explain {
+        font-size: 2.4rem;
+        font-weight: 500;
+        font-size: 2.4rem;
+        font-weight: 500;
+        max-width: 554px;
+        width: 100%;
+        line-height: 1.9;
+        margin-top: -11px;
+        margin-left: 68px;
+    }
+
+    .c-represent__explainitem {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .c-represent__name {
+        max-width: 44px;
+        width: 100%;
+    }
+
+    .c-represent__line {
+        max-width: 62px;
+        width: 100%;
+        height: 0;
+        margin: 0;
+        align-self: center;
+        border: hidden;
+        border-top: 1px solid #fff;
+        margin: 0 19px 0 10px;
+    }
+
+    .c-represent__mean {
+        max-width: 410px;
+        width: 100%;
+    }
+}

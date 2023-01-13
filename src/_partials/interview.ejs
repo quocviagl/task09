@@ -1,0 +1,76 @@
+<section class="p-interview l-container--1200 " id="interview">
+  <div class="c-interview__messages">
+    <div class="c-messages l-container--960">
+      <div class="c-messages__heading">
+        <h2 class="c-messages__title u-textblue"><%= interview.title%></h2>
+        <h3 class="c-messages__subtitle u-textgray">
+          <span class="c-messages__subtitle--top"><%- interview.subtitle1%></span>
+          <br>
+          <span class="c-messages__subtitle--top"><%- interview.subtitle2%></span>
+        </h3>
+      </div>
+      <div class="c-messages__list ">
+          <% if (typeof interview != 'undefined') { %>
+            <% interview.list && interview.list.forEach(item => { %>
+                <div class="c-messages__item">
+                  <figure class="c-messages__itemimg">
+                    <img src="<%= item.img %>" alt="<%= item.title %>"  class="c-messages__img">
+                  </figure>
+                  <p class="c-messages__itemtitle u-textblue u-bgwhite"><%= item.title %></p>
+                  <div class="c-messages__info u-bgblue u-textwhite">
+                    <img src="<%= interview.arrow %>" alt="<%= item.title %>" class="c-messages__arrow">
+                    <p class="c-messages__introduce">
+                      <span class="c-messages__name"><%= item.name %></span><br>
+                      <span class="c-messages__exp"><%= item.exp %></span>
+                    </p>
+                  </div>
+                </div>
+            <%})%>
+          <%}%>
+      </div>
+    </div>
+  </div>
+  <div class="c-interview__represent u-bgblue">
+    <div class="c-represent l-container--960 u-textwhite">
+      <div class="c-represent__wrapper">
+        <h3 class="c-represent__title"><%= represent.title %></h3>
+        <div class="c-represent__sharer">
+          <div class="c-represent__text">
+            <h4 class="c-represent__subtitle"><%= represent.subtitle %></h4>
+              <% if (represent.descriptions) { %>
+                <% represent.descriptions && represent.descriptions.forEach(desc => { %>
+                  <p class="c-represent__description"><%= desc.description %></p>
+                <%})%>
+              <%}%>
+            </div>
+          <img src="<%= represent.img %>" alt="<%= represent.title %>" class="c-represent__img">
+        </div>
+        <div class="c-represent__feelbox">
+          <% if (represent.feels) { %>
+            <% represent.feels.forEach(feel => { %>
+              <p class="c-represent__feel"><%= feel.feel %></p>
+            <%})%>
+          <%}%>
+        </div>
+        <p class="c-represent__author"><%=represent.author %></p>
+      </div>
+      <div class="c-represent__company">
+        <p class="c-represent__companyname"><%= represent.company%></p>
+        <div class="c-represent__explainbox">
+          <a href="./" class=" u-bgwhite c-represent__logolink"><img src="<%= represent.logo %>" alt="<%= represent.title %>" class="c-represent__logo"></a>
+          <div class="c-represent__explain">
+            <% if (represent.brandinfo) { %>
+              <% represent.brandinfo.forEach(info => { %>
+                  <div class="c-represent__explainitem">
+                    <p class="c-represent__name"><%= info.name %></p><hr class="c-represent__line">
+                    <p class="c-represent__mean"><%= info.mean %></p>
+                  </div>
+              <%})%>
+            <%}%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  

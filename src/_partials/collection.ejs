@@ -6,7 +6,7 @@
         </div>
         <div class="c-collection__content">
                 <div class="c-collection__item c-collection__item--video">
-                    <video class="c-collection__video" controls="" data-ll-status="loaded">
+                    <video autoplay muted loop class="c-collection__video" controls="" data-ll-status="loaded">
                     <source data-src="<%=collection.video%>" type="video/mp4" src="<%=collection.video%>">
                     </video>
                 </div>
@@ -14,10 +14,10 @@
                     <% if (typeof collection != 'undefined') { %>
                         <% collection.imgs && collection.imgs.forEach(img => { %>
                             <figure class="c-collection__img">
-                                <img src="<%= img.url %>" alt="<%= collection.title %> " class="">
+                                <img src="<%= img.url %>" alt="<%= collection.title %>">
                             </figure>
-                            <%})%>
-                            <%}%>
+                        <%})%>
+                    <%}%>
                 </div>
         </div>
     </div>

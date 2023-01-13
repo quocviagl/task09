@@ -1,0 +1,48 @@
+<section class="p-recruit l-container--960" id="recruit">
+  <div class="c-recruit">
+    <div class="c-recruit__heading">
+      <h2 class="c-recruit__title u-textblue"><%= recruit.title %></h2>
+      <h3 class="c-recruit__subtitle u-textgray">
+        <span class="c-recruit__subtitle--top"><%= recruit.subtitle1 %></span
+        ><br>
+        <span class="c-recruit__subtitle--top"><%= recruit.subtitle2 %></span>
+      </h3>
+    </div>
+    <div class="c-recruit__table">
+      <div class="c-table__wrapper">
+        <div class="c-table__tabs">
+          <div class="c-table__tab c-table__tab--left is-active">
+            <span><%= recruit.tabtitle1 %></span>
+          </div>
+          <div class="c-table__tab c-table__tab--right ">
+            <span><%= recruit.tabtitle2 %></span>
+          </div>
+        </div>
+        <% if (recruit.tabs) { %> <% recruit.tabs && recruit.tabs.forEach((tab,i
+        )=> { %>
+        <div class="c-table__content c-table__content--<%=i+1%>">
+          <table class="c-table">
+            <tbody>
+              <% if (tab.contents) { %> <% tab.contents &&
+              tab.contents.forEach((content,i) => { %>
+              <tr class="c-table__row c-table__row--<%=i+1%>">
+                <th class="c-table__head"><%= content.th%></th>
+                <% if (content.td) { %>
+                <td class="c-table__description">
+                  <% content.td && content.td.forEach((item) => { %>
+                  <span class="c-table__description--item"
+                    ><%= item.text %></span
+                  ><br>
+                  <%})%>
+                </td>
+                <%}%>
+              </tr>
+              <%})%> <%}%>
+            </tbody>
+          </table>
+        </div>
+        <%})%> <%}%>
+      </div>
+    </div>
+  </div>
+</section>

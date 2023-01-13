@@ -1,0 +1,196 @@
+.c-recruit {
+    margin-top: 90px;
+
+    .c-recruit__heading {
+        text-align: center;
+    }
+
+    .c-recruit__title {
+        font-size: 4.4rem;
+        font-weight: 500;
+        letter-spacing: 0.074em;
+        margin-bottom: 10px;
+    }
+
+    .c-recruit__subtitle {
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.024em;
+        line-height: 1.6;
+    }
+
+    .c-table__wrapper {
+        margin-top: 57px;
+    }
+
+    .c-table {
+        border-collapse: collapse;
+        color: #0b0b0b;
+    }
+
+    .c-table__content {
+        background-color: #f2f5f7;
+        padding: 59px 38px 57px;
+        border: 3px solid #0080cc;
+    }
+
+    .c-table__tabs {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .c-table__tab {
+        font-size: 2.6rem;
+        font-weight: 400;
+        width: 50%;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #404141;
+        font-size: 2.6rem;
+        padding: 31px 36px 13px 0;
+        font-weight: 400;
+
+        &--left {
+            border-top-left-radius: 20px;
+            border-right: hidden;
+
+            &.is-active {
+                background: #0080cc;
+                width: 58.5%;
+                color: #fff;
+                border: hidden;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                padding: 34px 0 17px;
+                line-height: 1.7;
+            }
+        }
+
+        &--right {
+            border-top-right-radius: 20px;
+            border-left: hidden;
+
+            &.is-active {
+                background: #3c3c3c;
+                width: 58.5%;
+                color: #fff;
+                border: hidden;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                padding: 32px 0 19px;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .c-table__head {
+        font-size: 2rem;
+        font-weight: 600;
+        width: 29%;
+        text-align: start;
+        vertical-align: top;
+        padding: 20px 0 18px 60px;
+    }
+
+    .c-table__description {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #0b0b0b;
+        letter-spacing: 0.024em;
+    }
+
+    .c-table__row {
+        border-bottom: 1px solid #707070;
+
+        &--1 {
+            border-bottom: 5px solid #0080cc;
+
+            .c-table__head {
+                padding: 2px 0 16px 60px;
+            }
+
+            .c-table__description {
+                vertical-align: text-top;
+            }
+        }
+
+        &--2 {
+            .c-table__head {
+                padding: 20px 0 75px 60px; 
+            }
+
+            .c-table__description {
+                vertical-align: text-top;
+                padding-top: 16px;
+                line-height: 1.75;
+            }
+        }
+
+        &--3 {
+            .c-table__head {
+                padding-top: 20px;
+                padding-bottom: 18px;
+            }
+
+            .c-table__description {
+                vertical-align: middle;
+            }
+        }
+
+        &--4 {
+            .c-table__head {
+                padding-top: 21px;
+                padding-bottom: 43px;
+            }
+
+            .c-table__description {
+                line-height: 1.8;
+            }
+        }
+
+        &--6 {
+            .c-table__head {
+                padding-bottom: 39px;
+            }
+
+            .c-table__description {
+                line-height: 1.6;
+            }
+        }
+
+        &--7 {
+            .c-table__head {
+                padding-bottom: 103px;
+            }
+
+            .c-table__description {
+                line-height: 1.85;
+
+                &--item {
+                    &:nth-of-type(2) {
+                        margin-left: 4px;
+                    }
+
+                    &:nth-of-type(3) {
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+
+        &--13 {
+            .c-table__head {
+                padding: 16px 80px 71px 60px;
+                line-height: 1.5;
+            }
+
+            .c-table__description {
+                padding-top: 16px;
+                padding-right: 48px;
+                line-height: 1.85;
+                vertical-align: text-top;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="64" viewBox="0 0 210 64">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #005384;
+      }
+
+      .cls-1 {
+        font-size: 27px;
+        font-family: SegoeUI, Segoe UI;
+        letter-spacing: 0.024em;
+      }
+
+      .cls-2 {
+        fill: rgba(0,0,0,0);
+      }
+    </style>
+  </defs>
+  <g id="Group_86" data-name="Group 86" transform="translate(-495 -8068)">
+    <text id="INTERVIEW" class="cls-1" transform="translate(495 8096)"><tspan x="35.323" y="29">INTERVIEW</tspan></text>
+    <g id="_zoom_in" data-name=" zoom_in" transform="translate(-23 7518)">
+      <rect id="Path" class="cls-2" width="30" height="30" transform="translate(608 550)"/>
+      <path id="Icon" class="cls-3" d="M21.626,23.058a1.407,1.407,0,0,1-1-.416L14.867,16.9V15.829l-.365-.378a8.81,8.81,0,0,1-5.727,2.126,9.069,9.069,0,0,1-1.492-.125A8.791,8.791,0,0,1,8.781,0,9.147,9.147,0,0,1,9.892.068a8.776,8.776,0,0,1,5.556,14.437l.378.364H16.9l5.745,5.759a1.416,1.416,0,0,1,0,2l-.013.013A1.407,1.407,0,0,1,21.626,23.058ZM8.784,2.7a6.083,6.083,0,1,0,6.083,6.083A6.09,6.09,0,0,0,8.784,2.7Zm0,9.461a.669.669,0,0,1-.677-.675V9.463H6.081a.676.676,0,1,1,0-1.352H8.108V6.083a.676.676,0,0,1,1.353,0V8.111h2.027a.676.676,0,1,1,0,1.352H9.46v2.028A.669.669,0,0,1,8.784,12.166Z" transform="translate(611.002 552.999)"/>
+    </g>
+  </g>
+</svg>

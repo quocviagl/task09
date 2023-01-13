@@ -4,16 +4,39 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .c-mainvisual {
     position: relative;
+    height: 87.3vh;
 
     .c-mainvisual__inner {
         position: absolute;
         top: 27.8%;
         z-index: 1000;
         left: 120px;
+    }
+
+    .c-mainvisual__wrapper {
+        height: 100%;
+    }
+
+    .c-mainvisual__slider {
+        height: 100%;
+    }
+
+    .c-mainvisual__img {
+        object-fit: cover;
+        height: 100%;
+        animation-fill-mode: forwards;
+        transition: all 3s cubic-bezier(0.48, 0.41, 0.61, 0.73);
+
+        &:nth-child(1)
+        {
+            
+
+        }
     }
 
     .c-mainvisual__title {
