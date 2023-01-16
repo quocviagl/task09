@@ -1,0 +1,107 @@
+.c-company {
+    margin-top: 90px;
+
+    .c-company__title {
+        font-size: 4.4rem;
+        font-weight: 500;
+        letter-spacing: 0.074em;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+}
+
+.c-company__tablewrapper {
+    margin-top: 49px;
+}
+
+.c-company__table {
+    border-collapse: collapse;
+    
+    .c-table__row {
+        .c-table__head {
+            color: #0b0b0b;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0.024em;
+            text-align: left;
+            background-color: #f7f7f7;
+            border: 1px solid #cbcbcb;
+            width: 30%;
+            padding: 20px 0 17px 18px;
+        }
+
+        .c-table__description {
+            color: #0b0b0b;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0.024em;
+            border: 1px solid #cbcbcb;
+            padding-left: 19px;
+
+        }
+
+        &--5 {
+            .c-table__head {
+                padding-top: 16px;
+            }
+        }
+
+        &--8 {
+            padding-top: 19px;
+            vertical-align: text-top;
+
+            .c-table__description {
+                line-height: 1.87;
+                padding-bottom: 12px;
+            }
+        }
+
+        &--9 {
+            .c-table__head {
+                padding-bottom: 51px;
+            }
+
+            .c-table__description {
+                
+                vertical-align: text-top;
+                padding-top: 14px;
+                line-height: 1.85;
+
+            }
+        }
+
+        &--12 {
+            .c-table__head {
+                padding-bottom: 15px;
+            }
+        }
+
+        &--13 {
+            .c-table__description {
+                padding-top: 4px;
+            }
+        }
+
+        &--15 {
+            .c-table__head {
+                padding-bottom: 11px;
+            }
+
+            .c-table__description {
+                padding-top: 7px;
+            }
+        }
+
+        &--16 {
+            .c-table__head {
+                vertical-align: text-top;
+            }
+
+            .c-table__description {
+                padding: 14px 19px 16px;
+                line-height: 1.85;
+            }
+        }
+    }
+}

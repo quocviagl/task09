@@ -20,7 +20,7 @@
     }
 
     .c-table__wrapper {
-        margin-top: 57px;
+        margin-top: 63px;
     }
 
     .c-table {
@@ -30,8 +30,39 @@
 
     .c-table__content {
         background-color: #f2f5f7;
-        padding: 59px 38px 57px;
+        padding: 59px 38px 56px;
         border: 3px solid #0080cc;
+        display: none;
+
+        &--2 {
+            padding: 59px 38px 74px;
+
+            &.is-active {
+                border-color: #3c3c3c;
+
+            }
+
+            .c-table__row {
+                &--1 {
+                    border-color: #3c3c3c;
+                }
+
+                &--5 {
+                    .c-table__description {
+                        padding: 15px 0 14px;
+                        line-height: 1.85;
+                    }
+                }
+            }
+
+            .c-table__description {
+                border-color: #707070;
+            }
+        }
+
+        &.is-active {
+            display: block;          
+        }
     }
 
     .c-table__tabs {
@@ -45,39 +76,40 @@
         width: 50%;
         text-align: center;
         cursor: pointer;
+        
         border: 1px solid #404141;
         font-size: 2.6rem;
-        padding: 31px 36px 13px 0;
+        padding: 28px 36px 13px 0;
         font-weight: 400;
 
         &--left {
-            border-top-left-radius: 20px;
+            border-top-left-radius: 10px;
             border-right: hidden;
 
             &.is-active {
                 background: #0080cc;
-                width: 58.5%;
+                width: 50%;
                 color: #fff;
                 border: hidden;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                padding: 34px 0 17px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 29px 0 17px;
                 line-height: 1.7;
             }
         }
 
         &--right {
-            border-top-right-radius: 20px;
+            border-top-right-radius: 10px;
             border-left: hidden;
 
             &.is-active {
                 background: #3c3c3c;
-                width: 58.5%;
+                width: 50%;
                 color: #fff;
                 border: hidden;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                padding: 32px 0 19px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 29px 0 17px;
                 line-height: 1.7;
             }
         }
@@ -178,6 +210,13 @@
             }
         }
 
+        &--12 {
+            .c-table__description {
+                padding-top: 4px;
+                padding-left: 3px;
+            }
+        }
+
         &--13 {
             .c-table__head {
                 padding: 16px 80px 71px 60px;
@@ -190,6 +229,56 @@
                 line-height: 1.85;
                 vertical-align: text-top;
                 letter-spacing: 0.02em;
+            }
+        }
+    }
+
+    .c-table__btngroup {
+        display: flex;
+        justify-content: space-between;
+        padding: 51px 69px 0;
+
+        .c-table__btn {
+            color: #fff;
+            font-size: 2.2rem;
+            font-weight: 400;
+            border-radius: 9px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            max-width: 353px;
+            max-height: 66px;
+            width: 100%;
+            padding: 17px 0;
+            letter-spacing: 0.024em;
+
+
+            &::before { 
+                display: block;
+                content: "";
+                background: url("./assets/img/recruitment.svg") no-repeat;
+                width: 30px;
+                height: 30px;
+                padding-right: 9px;
+                background-size: contain;
+
+            }
+
+            &--left {
+                background: #0080cc;
+
+                &::before {
+                    transform: translate(-54%, 7%);
+                }
+            }
+
+            &--right {
+                background: #005384;
+                margin-right: -1px;
+
+                &::before {
+                    transform: translate(5%, 7%);
+                }
             }
         }
     }

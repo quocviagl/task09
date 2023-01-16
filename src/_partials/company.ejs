@@ -1,0 +1,28 @@
+<section class="p-company p-scroll l-container--960" id="company">
+  <div class="c-company">
+      <h2 class="c-company__title u-textblue"><%= company.title %> </h2>
+  </div>
+  <div class="c-company__tablewrapper">
+    <table class="c-company__table">
+      <tbody>
+        <% if (company.contents) { %> <% company.contents &&
+        company.contents.forEach((content,i) => { %>
+        <tr class="c-table__row c-table__row--<%=i+1%>">
+          <th class="c-table__head"><%= content.th%></th>
+          <% if (content.td) { %>
+          <td class="c-table__description">
+            <% content.td && content.td.forEach((item) => { %>
+            <span class="c-table__description--item"
+              ><%- item.text %></span
+            ><br>
+            <%})%>
+          </td>
+          <%}%>
+        </tr>
+        <%})%>
+        <%}%> 
+      
+      </tbody>
+    </table>
+  </div>
+</section>

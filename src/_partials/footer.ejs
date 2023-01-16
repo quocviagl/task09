@@ -1,3 +1,23 @@
-<footer class="c-footer">
-
+<footer class="c-footer u-bgwhite ">
+    <div class="c-footer__content">
+        <div class="c-footer__wrapper l-container--1200">
+        <h2 class="c-footer__logo"><a href="./" class="c-footer__logolink"><img src="./assets/img/footerlogo.png" alt="Entex Recruitment 2020"></a></h2>
+        <nav class="c-gnav">
+        <% if (typeof linklists != 'undefined') { %>
+            <ul class="c-gnav__menu">
+            <% linklists.main && linklists.main.forEach(link => { %>
+                <li class="c-gnav__item">
+                <a class="c-gnav__link u-textblue " href="<%= link.url %>"><%= link.title %></a>
+                </li>
+            <% }) %>
+            </ul>
+        </nav>
+            <% linklists.subpage && linklists.subpage.forEach(item => { %>
+            <a class="c-gnav__recruit u-bgblue u-textwhite" href="<%= item.url %>"><%= item.title %></a>
+        <% }) %>
+        <%}%>
+        </div>
+    </div>
+    <div class="c-footer__coppyright u-bgblue u-textwhite">©  株式会社ENTEX. All rights reserved.</div>
 </footer>
+  

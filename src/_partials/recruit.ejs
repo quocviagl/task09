@@ -1,4 +1,4 @@
-<section class="p-recruit l-container--960" id="recruit">
+<section class="p-recruit p-scroll l-container--960" id="recruit">
   <div class="c-recruit">
     <div class="c-recruit__heading">
       <h2 class="c-recruit__title u-textblue"><%= recruit.title %></h2>
@@ -14,13 +14,13 @@
           <div class="c-table__tab c-table__tab--left is-active">
             <span><%= recruit.tabtitle1 %></span>
           </div>
-          <div class="c-table__tab c-table__tab--right ">
+          <div class="c-table__tab c-table__tab--right">
             <span><%= recruit.tabtitle2 %></span>
           </div>
         </div>
         <% if (recruit.tabs) { %> <% recruit.tabs && recruit.tabs.forEach((tab,i
         )=> { %>
-        <div class="c-table__content c-table__content--<%=i+1%>">
+        <div class="c-table__content c-table__content--<%=i+1%> <% if(i+1==1) {%> is-active<%}%>  ">
           <table class="c-table">
             <tbody>
               <% if (tab.contents) { %> <% tab.contents &&
@@ -37,10 +37,18 @@
                 </td>
                 <%}%>
               </tr>
-              <%})%> <%}%>
+              <%})%> 
             </tbody>
           </table>
+          <% if (i+1==1) { %>
+            <div class="c-table__btngroup l-container--960">
+            <a href="#" class="c-table__btn c-table__btn--left">高校生の方はこちら</a>
+            <a href="#" class="c-table__btn c-table__btn--right">高校生以外の方はこちら</a>
+          </div>
+          <%}%>
+
         </div>
+        <%}%>
         <%})%> <%}%>
       </div>
     </div>

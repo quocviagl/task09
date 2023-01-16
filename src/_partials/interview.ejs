@@ -1,4 +1,4 @@
-<section class="p-interview l-container--1200 " id="interview">
+<section class="p-interview p-scroll l-container--1200 " id="interview">
   <div class="c-interview__messages">
     <div class="c-messages l-container--960">
       <div class="c-messages__heading">
@@ -28,6 +28,40 @@
             <%})%>
           <%}%>
       </div>
+      <% if (interview.messages) { %>
+        <% interview.messages.forEach((message,i) => { %>
+            <div class="c-messages__modal c-messages__modal--<%=i+1%> ">
+              <div class="c-messages__content l-container--960">
+                <h4 class="c-messages__modaltitle u-textblue"><%= message.title  %></h4> 
+                <div class="c-messages__modalcontent">
+                  <div class="c-messages__modalcontent--top">
+                    <div class="c-messages__modalimgbox">
+                      <img src="<%= message.img %>" alt="<%= message.title %>" class="c-messages__modalimg">
+                      <div class="c-messages__modalinfo u-bgblue u-textwhite">
+                        <p class="c-messages__modalname"><%= message.name  %></p>
+                        <p class="c-messages__modalexp"><%= message.exp  %></p>
+                      </div>
+                    </div>
+                    <div class="c-messages__modaltext">
+                      <% if (message.contents) { %>
+                        <% message.contents.forEach(content => { %>
+                          <dl class="c-messages__modalquestion">
+                            <dt class="c-messages__modalquestion--title u-textgray"><%= content.question %></dt>
+                            <dd class="c-messages__modalanswer"><%- content.answer %></dd>
+                          </dl>
+                        <%})%>
+                      <%}%>
+                    </div>
+                    </div>
+                  <div class="c-messages__modalcontent--bottom u-bgblue u-textwhite">
+                    <img src="./assets/img/interview/modal/close.svg" alt="閉じる" class="c-messages__modalcloseicon">
+                    <span class="c-messages__modalclose">閉じる</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <%})%>
+      <%}%>
     </div>
   </div>
   <div class="c-interview__represent u-bgblue">

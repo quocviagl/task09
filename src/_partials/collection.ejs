@@ -21,5 +21,24 @@
                 </div>
         </div>
     </div>
+    <div class="c-collection__modal">
+        <% if (collection.modals) { %>
+            <% collection.modals.forEach((modal,i) => { %>
+                <div class="c-collection__modal c-collection__modal--<%=i+1%> <% if(i+1==1) {%> is-active<%}%>">
+                  <div class="c-collection__content l-container--960">
+                    <div class="c-collection__modalcontent">
+                      <div class="c-collection__modalimg">
+                          <img src="<%= modal.url %>" alt="<%= collection.title %>" class="c-collection__modalimg">
+                      <div class="c-collection__modalcontent--bottom u-bgblue u-textwhite">
+                        <img src="./assets/img/interview/modal/close.svg" alt="閉じる" class="c-collection__modalcloseicon">
+                        <span class="c-collection__modalclose">閉じる</span>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <%})%>
+          <%}%>
+    </div>
   </section>
   

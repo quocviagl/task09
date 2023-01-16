@@ -6,7 +6,7 @@
       <ul class="c-gnav__menu">
         <% linklists.main && linklists.main.forEach(link => { %>
           <li class="c-gnav__item">
-            <a class="c-gnav__link u-textblue " <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+            <a class="c-gnav__link u-textblue" href="<%= link.url %>"><%= link.title %></a>
           </li>
         <% }) %>
       </ul>
