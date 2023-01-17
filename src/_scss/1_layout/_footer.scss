@@ -19,6 +19,17 @@
         padding: 13px 0;
 
     }
+
+    .c-footer__companylink {
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: #a0a0a0;
+        text-decoration: underline;
+        float: right;
+        margin-right: 60px;
+        margin-top: 10px;
+    }
 }
 
 .c-footer__wrapper {
@@ -114,6 +125,8 @@
             padding-right: 8px;
         }
     }
+
+  
 }
 
 

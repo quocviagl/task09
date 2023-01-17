@@ -1,0 +1,19 @@
+.c-fadein {
+    opacity: 0;
+}
+
+.is-fadein {
+    animation: fadein 2s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

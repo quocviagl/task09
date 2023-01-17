@@ -1,8 +1,7 @@
 <section class="p-company p-scroll l-container--960" id="company">
   <div class="c-company">
-      <h2 class="c-company__title u-textblue"><%= company.title %> </h2>
-  </div>
-  <div class="c-company__tablewrapper">
+      <h2 class="c-company__title u-textblue c-fadein"><%= company.title %> </h2>
+  <div class="c-company__tablewrapper c-fadein">
     <table class="c-company__table">
       <tbody>
         <% if (company.contents) { %> <% company.contents &&
@@ -25,4 +24,5 @@
       </tbody>
     </table>
   </div>
+</div>
 </section>

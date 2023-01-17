@@ -3,7 +3,7 @@
     <div class="c-mainvisual__slider l-container">
       <% if (typeof mainvisual != 'undefined') { %>
           <% mainvisual.imgs && mainvisual.imgs.forEach(img => { %>
-            <img src="<%= img.url %>" alt="<%=img.alt%>" class="c-mainvisual__img">
+              <img src="<%= img.url %>" alt="<%=img.alt%>" class="c-mainvisual__img">
         <%})%>
       <%}%>
     </div>

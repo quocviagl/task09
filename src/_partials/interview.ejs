@@ -1,7 +1,7 @@
 <section class="p-interview p-scroll l-container--1200 " id="interview">
   <div class="c-interview__messages">
     <div class="c-messages l-container--960">
-      <div class="c-messages__heading">
+      <div class="c-messages__heading c-fadein">
         <h2 class="c-messages__title u-textblue"><%= interview.title%></h2>
         <h3 class="c-messages__subtitle u-textgray">
           <span class="c-messages__subtitle--top"><%- interview.subtitle1%></span>
@@ -9,7 +9,7 @@
           <span class="c-messages__subtitle--top"><%- interview.subtitle2%></span>
         </h3>
       </div>
-      <div class="c-messages__list ">
+      <div class="c-messages__list c-fadein">
           <% if (typeof interview != 'undefined') { %>
             <% interview.list && interview.list.forEach(item => { %>
                 <div class="c-messages__item">
@@ -53,7 +53,7 @@
                       <%}%>
                     </div>
                     </div>
-                  <div class="c-messages__modalcontent--bottom u-bgblue u-textwhite">
+                  <div class="c-messages__modalcontent--bottom u-bgblue c-closebtn u-textwhite">
                     <img src="./assets/img/interview/modal/close.svg" alt="閉じる" class="c-messages__modalcloseicon">
                     <span class="c-messages__modalclose">閉じる</span>
                   </div>
@@ -65,7 +65,7 @@
     </div>
   </div>
   <div class="c-interview__represent u-bgblue">
-    <div class="c-represent l-container--960 u-textwhite">
+    <div class="c-represent c-fadein l-container--960 u-textwhite">
       <div class="c-represent__wrapper">
         <h3 class="c-represent__title"><%= represent.title %></h3>
         <div class="c-represent__sharer">

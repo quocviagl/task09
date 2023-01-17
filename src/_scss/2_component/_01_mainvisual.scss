@@ -29,14 +29,7 @@
     .c-mainvisual__img {
         object-fit: cover;
         height: 100%;
-        animation-fill-mode: forwards;
-        transition: all 3s cubic-bezier(0.48, 0.41, 0.61, 0.73);
-
-        &:nth-child(1)
-        {
-            
-
-        }
+        min-height: 768px;
     }
 
     .c-mainvisual__title {
@@ -93,14 +86,15 @@
             top: -54px;
             left: -1px;
             display: inline-block;
+            cursor: pointer;
 
             &::before {
                 content: "";
                 position: absolute;
-                top: 47px;
-                left: 50%;
+                top: 41px;
+                left: 49%;
                 height: 30px;
-                width: 1px;
+                width: 2px;
                 background-color: #0080cc;
             }
         }

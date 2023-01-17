@@ -1,6 +1,6 @@
 <section class="p-career p-scroll l-container--1200" id="career">
   <div class="c-career">
-    <div class="c-career__heading l-container--880">
+    <div class="c-career__heading l-container--880 c-fadein">
       <div class="c-career__heading--top">
         <h2 class="c-career__title u-textblue">
           <%= career.title1 %><br><span class="c-career__title--under"
@@ -19,7 +19,7 @@
         </p>
       </div>
     </div>
-    <div class="c-career__contentbox">
+    <div class="c-career__contentbox  c-fadein">
       <div class="c-career__contentmodal u-bgwhite">
         <h3 class="c-career__boxtitle u-textblue"><%= career.boxtitle%></h3>
         <p class="c-career__boxdescription">
@@ -38,7 +38,7 @@
         </p>
       </div>
     </div>
-    <div class="c-career__plan l-container--960 u-textblue">
+    <div class="c-career__plan l-container--960 u-textblue  c-fadein">
       <h3 class="c-career__plantitle"><%= plan.title%></h3>
       <div class="c-career__diagram">
         <% if (typeof plan != 'undefined') { %> <% plan.list &&
@@ -54,7 +54,7 @@
       </div>
       <div class="c-career__question u-textorange"><%- plan.question %></div>
     </div>
-    <div class="c-career__benefit">
+    <div class="c-career__benefit  c-fadein">
       <div class="c-benefit__imgbox">
         <% if (benefit.imgs) { %> <% benefit.imgs && benefit.imgs.forEach(img =>
         { %>
