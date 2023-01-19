@@ -1,16 +1,50 @@
-$('.c-mainvisual__slider').not('.slick-initialized').slick({
-  fade: true,
-  speed: 1100,
-  infinite: true,
-  autoplay: true,
-  cssEase: "linear",
-  arrows: false,
+// $('.c-mainvisual__slider').not('.slick-initialized').slick({
+//   fade: true,
+//   speed: 1100,
+//   infinite: true,
+//   autoplay: true,
+//   cssEase: "linear",
+//   arrows: false,
+//   });
+$(function () {
+  slideinout();
+});
+function slideinout() {
+  if (!$("#c-jstopslider").length) return;
+  var slider = $("#c-jstopslider");
+  slider.on("init", function () {
+    slider.find(".slick-current").removeClass("slick-animated");
   });
+  slider.slick({
+    fade: true,
+    dots: false,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed: 5000,
+    speed: 2000,
+    cssEase: "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    swipe: false,
+  });
+  slider.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+    slick.$slides.eq(nextSlide).addClass("slick-animated");
+    setTimeout(function () {
+      slider
+        .find(".slick-slide:not(.slick-current)")
+        .removeClass("slick-animated");
+    }, 1500);
+  });
+  setTimeout(function () {
+    slider.slick("slickPlay");
+    slider.find(".slick-current").addClass("slick-animated");
+  }, 2000);
+}
 //SCROLL BUTTON
 $(".c-mainvisual__scrolltext--top").on("click", function () {
     $("html, body").animate(
       {
-        scrollTop: 800,
+        scrollTop: 900,
       },
       1000
     );
@@ -19,7 +53,8 @@ $(".c-mainvisual__scrolltext--top").on("click", function () {
   $(".c-gnav__item").each(function (i) {
       $(this).click(function(){
         var href = $(this).children().attr('href');
-        $("html, body").animate(
+        $(this).children().addClass("is-active").siblings().removeClass("is-active");
+        $("html,body").animate(
           {
             scrollTop: $(href).offset().top - 80,
           },
@@ -45,19 +80,19 @@ $(".c-table__tab").click(function(){
 //MENU ACTIVE BORDER
 $(window).scroll(function () {
   let scroll_pos = $(window).scrollTop();
-  $(".p-scroll").each(function (i) {
-    if (scroll_pos + 500 >= $(this).offset().top) {
-      $(".c-gnav__item").siblings().removeClass("is-active");
-      $(".c-gnav__item").eq(i).addClass("is-active");
-   
+  var arr = [];
+  $(".p-scroll").each(function (i,val) {
+    if (scroll_pos + 600 > $(val).offset().top ){
+      $(".c-gnav__item").eq(i).addClass("is-active").siblings().removeClass("is-active");
     }
   });
+
 //FADE IN ANIMATION
   $(".c-fadein").each(function(i){
     if(scroll_pos + 800 >= $(this).offset().top){
       $(this).addClass('is-fadein')
     }
-  })
+  });
 });
 //OPEN MESSAGE MODAL
 $( ".c-messages__item" ).click(function() {
@@ -82,3 +117,4 @@ $('.c-closebtn').click(function(){
     $('#p-main').removeClass("is-hidden")
   }
 })
+///

@@ -25,3 +25,13 @@
         @content;
     }
 }
+@mixin fixpcview {
+    @media only screen and (max-width: 1025px) {
+        @content;
+    }
+}
+@mixin pp {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}

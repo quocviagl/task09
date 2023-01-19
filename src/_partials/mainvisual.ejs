@@ -1,11 +1,17 @@
 <section class="c-mainvisual">
   <div class="c-mainvisual__wrapper">
-    <div class="c-mainvisual__slider l-container">
-      <% if (typeof mainvisual != 'undefined') { %>
-          <% mainvisual.imgs && mainvisual.imgs.forEach(img => { %>
-              <img src="<%= img.url %>" alt="<%=img.alt%>" class="c-mainvisual__img">
-        <%})%>
-      <%}%>
+    <div class="c-slider__slideshow">
+      <div class="c-topslider c-zoominslider" id="c-jstopslider">
+        <div class="c-topslider__item c-topslider__item01">
+          <div class="c-topslider__item--bg c-topslider__item--bg01"></div>
+        </div>
+        <div class="c-topslider__item c-topslider__item02">
+          <div class="c-topslider__item--bg c-topslider__item--bg02"></div>
+        </div>
+        <div class="c-topslider__item c-topslider__item03">
+          <div class="c-topslider__item--bg c-topslider__item--bg03"></div>
+        </div>
+      </div>
     </div>
     <div class="c-mainvisual__text">
       <div class="c-mainvisual__inner">
