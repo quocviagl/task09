@@ -11,9 +11,17 @@
           <p class="c-about__description"><%-about.des5%></p>
         </div>
       </div>
-      <div class="c-about__imgbox">
-        <img src="<%=about.img1%>" alt="<%=about.title%>" class="c-about__img c-about__img--top">
-        <img src="<%=about.img2%>" alt="<%=about.title%>" class="c-about__img c-about__img--bottom">
+      <div class="c-about__imgbox">   
+        <picture>
+          <source media="(max-width:767px)" srcset="<%=about.spimg1%>">
+          <source media="(max-width:1024px)" srcset="<%=about.tabimg1%>">
+          <img src="<%=about.img1%>" alt="<%=about.title%>" class="c-about__img c-about__img--top">
+        </picture>
+        <picture>
+          <source media="(max-width:767px)" srcset="<%=about.spimg2%>">
+          <source media="(max-width:1024px)" srcset="<%=about.tabimg2%>">
+          <img src="<%=about.img2%>" alt="<%=about.title%>" class="c-about__img c-about__img--bottom">
+        </picture>
       </div>
     </div>
   </div>

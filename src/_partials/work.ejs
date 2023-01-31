@@ -7,8 +7,12 @@
       <div class="c-work__wrapper c-fadein">
         <div class="c-work__imgbox">
           <% if (typeof work != 'undefined') { %>
-            <% work.imgs && work.imgs.forEach(img => { %>
-                <img src="<%= img.url %>" alt="<%= work.listtitle %> " class="c-work__img">
+            <% work.imgs && work.imgs.forEach((img,i) => { %>
+                <picture>
+                  <source media="(max-width:767px)" srcset="<%=img.sp%>">
+                  <source media="(max-width:1024px)" srcset="<%=img.tab%>">
+                  <img src="<%= img.url %>" alt="<%= work.listtitle %> " class="c-work__img--<%=i+1%>">
+                </picture>
             <%})%>
           <%}%>
         </div>

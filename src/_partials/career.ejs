@@ -11,7 +11,7 @@
       <div class="c-career__heading--bottom">
         <p class="c-career__description">
           <span class="c-career__description--line"><%= career.des1 %></span>
-          <span class="c-career__description--line"><%= career.des2 %></span>
+          <span class="c-career__description--line"><%- career.des2 %></span>
           <span class="c-career__description--line"><%= career.des3 %></span>
           <span class="c-career__description--line"><%= career.des4 %></span>
           <span class="c-career__description--line"><%= career.des5 %></span>
@@ -58,11 +58,11 @@
       <div class="c-benefit__imgbox">
         <% if (benefit.imgs) { %> <% benefit.imgs && benefit.imgs.forEach(img =>
         { %>
-        <img
-          src="<%= img.url %>"
-          alt="<%= benefit.title1%>"
-          class="c-benefit__img"
-        >
+        <picture>
+          <source media="(max-width:767px)" srcset="<%=img.sp%>">
+          <source media="(max-width:1024px)" srcset="<%=img.tab%>">
+          <img src="<%= img.url %>" alt="<%= benefit.title1%>" class="c-benefit__img">
+        </picture>
         <% }) %> <%}%>
       </div>
       <div class="c-benefit__text">
@@ -75,19 +75,19 @@
               <dt class="c-benefit__name"><%- item.heading%></dt>
               <dd class="c-benefit__itemdesc">
                 <% if(item.notes){%> <% item.notes.forEach(note=> { %>
-                <%-note.note%> <%})%> <%}%>
-              </dd>
+                  <%-note.note%> <%})%> <%}%>
+                </dd>
             </dl>
             <%})%> <%}%>
           </div>
         </div>
         <div class="c-benefit__content c-benefit__content--bottom">
-          <h4 class="c-benefit__title u-textorange"><%= benefit.title2 %></h4>
+          <h4 class="c-benefit__title u-textorange"><%- benefit.title2 %></h4>
           <div class="c-benefit__description u-textgray">
             <% if (benefit.list2) { %> <% benefit.list2 &&
             benefit.list2.forEach(item => { %>
             <dl class="c-benefit__item">
-              <dt class="c-benefit__name"><%= item.heading%></dt>
+              <dt class="c-benefit__name"><%- item.heading%></dt>
               <dd class="c-benefit__itemdesc">
                 <% if(item.notes){%> <% item.notes.forEach(note=> { %>
                 <%-note.note%> <%})%> <%}%>

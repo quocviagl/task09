@@ -1,6 +1,8 @@
 .c-company {
     margin-top: 90px;
-
+    @include tab{
+        margin-top: 51px;
+    }
     .c-company__title {
         font-size: 4.4rem;
         font-weight: 500;
@@ -13,6 +15,14 @@
 
 .c-company__tablewrapper {
     margin-top: 49px;
+    @include tab{
+        margin-top: 25px;
+        max-width: 728px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
 }
 
 .c-company__table {
@@ -29,6 +39,11 @@
             border: 1px solid #cbcbcb;
             width: 30%;
             padding: 20px 0 17px 18px;
+            @include tab{
+                font-size: 1.4rem;
+                width: 30.4%;
+                padding: 21px 0 18px 18px;
+            }
         }
 
         .c-table__description {
@@ -38,15 +53,37 @@
             letter-spacing: 0.024em;
             border: 1px solid #cbcbcb;
             padding-left: 19px;
+            @include tab{
+                font-size: 1.4rem;
+                padding-left: 30px;
 
+            }
         }
-
+        .c-table__phonenumber{
+            pointer-events: none;
+            @include tab{
+                pointer-events: all;
+            }
+            @include sp{
+                pointer-events: all;
+            }
+            
+        }
         &--5 {
             .c-table__head {
                 padding-top: 16px;
+                @include tab{
+                    padding-top: 19px;
+                }
             }
         }
-
+        &--7 {
+            .c-table__head {
+                @include tab{
+                    padding-bottom: 16px;
+                }
+            }
+        }
         &--8 {
             padding-top: 19px;
             vertical-align: text-top;
@@ -54,6 +91,11 @@
             .c-table__description {
                 line-height: 1.87;
                 padding-bottom: 12px;
+                @include tab{
+                    line-height: 1.77;
+                    padding-bottom: 10px;
+                    padding-left: 33px;
+                }
             }
         }
 
@@ -67,13 +109,37 @@
                 vertical-align: text-top;
                 padding-top: 14px;
                 line-height: 1.85;
+                @include tab{
+                    padding-top: 24px;
+                }
 
             }
         }
-
+        &--10 {
+            .c-table__head {
+                @include tab{
+                    padding-bottom: 42px;
+                }
+            }
+            .c-table__description{
+                @include tab{
+                    padding-top: 4px;
+                    line-height: 1.9;
+                    padding-right: 22px;
+                }
+            }
+        }
         &--12 {
             .c-table__head {
                 padding-bottom: 15px;
+                @include tab{
+                    padding-bottom: 17px;
+                }
+            }
+            .c-table__description{
+                @include tab{
+                    padding-top: 3px;
+                }
             }
         }
 
@@ -86,6 +152,9 @@
         &--15 {
             .c-table__head {
                 padding-bottom: 11px;
+                @include tab{
+                    padding-bottom: 13px;
+                }
             }
 
             .c-table__description {
@@ -101,6 +170,9 @@
             .c-table__description {
                 padding: 14px 19px 16px;
                 line-height: 1.85;
+                @include tab{
+                    padding: 11px 20px 4px 30px;
+                }
             }
         }
     }

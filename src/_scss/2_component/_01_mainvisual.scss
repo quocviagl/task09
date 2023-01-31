@@ -13,10 +13,7 @@
 
 .slick-animated .c-topslider__item--bg {
     backface-visibility: hidden;
-    backface-visibility: hidden;
     animation-duration: 5s;
-    animation-duration: 5s;
-    animation-timing-function: linear;
     animation-timing-function: linear;
 }
 
@@ -24,12 +21,7 @@
     position: relative;
     display: block;
     box-sizing: border-box;
-    box-sizing: border-box;
     user-select: none;
-    user-select: none;
-    user-select: none;
-    user-select: none;
-    touch-action: pan-y;
     touch-action: pan-y;
 }
 
@@ -92,6 +84,7 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    width: 768px;
 }
 
 [dir=rtl] .slick-slide {
@@ -180,9 +173,9 @@
 
 .c-mainvisual {
     position: relative;
-    height: 87.8vh;
-    @include pp {
-        height: 79.4vh;
+    height: 87.3vh;
+    @include tab {
+        height: 97.7vh;
     }
 
     .c-mainvisual__inner {
@@ -190,10 +183,17 @@
         top: 27.8%;
         z-index: 1000;
         left: 120px;
+        @include tab {
+            top: 34.8%;
+            left: 41px;
+        }
     }
 
     .c-mainvisual__wrapper {
         height: 100%;
+        @include tab {
+            height: 96%;
+        }
     }
 
     .c-mainvisual__slider {
@@ -211,6 +211,9 @@
         font-weight: 500;
         line-height: 1.65;
         height: 242px;
+        @include tab {
+            font-size: 4rem;
+        }
 
         &--span {
             height: calc((100% - 34px) / 3);
@@ -221,18 +224,29 @@
         &--top {
             letter-spacing: 0.04em;
             padding: 3px 5px 1px 8px;
+            @include tab {
+                padding: 0 10px 0 8px;
+                top: 2px;
+            }
         }
 
         &--middle {
             padding: 4px 10px 0 8px;
             top: 3px;
             letter-spacing: 0.05em;
+            @include tab {
+                padding: 0 10px 0 8px;
+            }
         }
 
         &--bottom {
             top: 6px;
             padding: 2px 0 2px 9px;
             font-feature-settings: "palt" 1;
+            @include tab {
+                top: 3px;
+                padding: 0 0 0 9px;
+            }
         }
     }
 
@@ -244,6 +258,11 @@
         z-index: 1000;
         left: 50%;
         transform: translate(-50%, 0);
+        @include tab {
+            height: 66px;
+            bottom: 30px;
+            max-width: 687px;
+        }
     }
 
     .c-mainvisual__scrolltext {
@@ -251,6 +270,10 @@
         font-weight: 500;
         letter-spacing: 0.069em;
         margin: 1px 0 0 4px;
+        @include tab {
+            font-size: 2.2rem;
+            margin: -8px 0 0 4px;
+        }
 
         &--top {
             text-transform: uppercase;
@@ -261,6 +284,10 @@
             left: -1px;
             display: inline-block;
             cursor: pointer;
+            @include tab {
+                top: -56px;
+                left: 8px;
+            }
 
             &::before {
                 content: "";

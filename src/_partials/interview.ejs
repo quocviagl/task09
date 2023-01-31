@@ -14,7 +14,12 @@
             <% interview.list && interview.list.forEach(item => { %>
                 <div class="c-messages__item">
                   <figure class="c-messages__itemimg">
-                    <img src="<%= item.img %>" alt="<%= item.title %>"  class="c-messages__img">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="<%=item.sp%>">
+                      <source media="(max-width:1024px)" srcset="<%=item.tab%>">
+                      <img src="<%= item.img %>" alt="<%= item.title %>"  class="c-messages__img">
+                    </picture>
+
                   </figure>
                   <p class="c-messages__itemtitle u-textblue u-bgwhite"><%= item.title %></p>
                   <div class="c-messages__info u-bgblue u-textwhite">
@@ -77,12 +82,17 @@
                 <%})%>
               <%}%>
             </div>
-          <img src="<%= represent.img %>" alt="<%= represent.title %>" class="c-represent__img">
+            <picture>
+              <source media="(max-width:767px)" srcset="<%=represent.sp%>">
+              <source media="(max-width:1024px)" srcset="<%=represent.tab%>">
+              <img src="<%= represent.img %>" alt="<%= represent.title %>" class="c-represent__img">
+            </picture>
+          
         </div>
         <div class="c-represent__feelbox">
           <% if (represent.feels) { %>
             <% represent.feels.forEach(feel => { %>
-              <p class="c-represent__feel"><%= feel.feel %></p>
+              <p class="c-represent__feel"><%- feel.feel %></p>
             <%})%>
           <%}%>
         </div>
@@ -91,7 +101,14 @@
       <div class="c-represent__company">
         <p class="c-represent__companyname"><%= represent.company%></p>
         <div class="c-represent__explainbox">
-          <a href="./" class=" u-bgwhite c-represent__logolink"><img src="<%= represent.logo %>" alt="Entex Recruitment" class="c-represent__logo"></a>
+          <a href="./" class=" u-bgwhite c-represent__logolink">
+            <picture>
+              <source media="(max-width:767px)" srcset="<%=represent.splogo%>">
+              <source media="(max-width:1024px)" srcset="<%=represent.tablogo%>">
+              <img src="<%= represent.logo %>" alt="Entex Recruitment" class="c-represent__logo">
+            </picture>
+           
+          </a>
           <div class="c-represent__explain">
             <% if (represent.brandinfo) { %>
               <% represent.brandinfo.forEach(info => { %>

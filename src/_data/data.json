@@ -58,7 +58,11 @@
     "des4":"また、最新道具が発展した現在でも多能工職人になることは難しいのですが、 当社は関西の中でもとくに職人の在籍率が高い会社でもあります。",
     "des5":"今では解体工事、リフォーム工事、新築工事なども施工する会社となり、より深く様々な作業を身に付ける事ができる未来発展型の会社です。",
     "img1":"./assets/img/about/about1.png",
-    "img2":"./assets/img/about/about2.png"
+    "img2":"./assets/img/about/about2.png",
+    "tabimg1":"./assets/img/about/tabletabout1.png",
+    "tabimg2":"./assets/img/about/tabletabout2.png",
+    "spimg1":"./assets/img/about/spabout1.png",
+    "spimg2":"./assets/img/about/spabout2.png"
   },
   "work":{
     "title":"私たちの仕事",
@@ -66,10 +70,19 @@
     "listtitle":"仕事内容の紹介",
     "listsubtitle":"屋外での現場作業をメインに行ないます。",
     "imgs":[
-      {"url":"./assets/img/work/work1.jpg"},
-      {"url":"./assets/img/work/work2.jpg"},
-      {"url":"./assets/img/work/work3.jpg"},
-      {"url":"./assets/img/work/work4.jpg"}
+      {"url":"./assets/img/work/work1.jpg",
+      "tab":"./assets/img/work/tabwork1.png",
+      "sp":"./assets/img/work/spwork1.png"
+      },
+      {"url":"./assets/img/work/work2.jpg",
+      "tab":"./assets/img/work/tabwork2.png",
+      "sp":"./assets/img/work/spwork2.png"},
+      {"url":"./assets/img/work/work3.jpg",
+      "tab":"./assets/img/work/tabwork3.png",
+      "sp":"./assets/img/work/spwork3.png"},
+      {"url":"./assets/img/work/work4.jpg",
+      "tab":"./assets/img/work/tabwork4.png",
+      "sp":"./assets/img/work/spwork4.png"}
     ],
     "workitems":[
       {
@@ -111,14 +124,30 @@
     "description":"私たちの仕事内容の一部を動画と写真でお伝えします。",
     "video":"./assets/img/collection/video.mp4",
     "imgs":[
-      {"url":"./assets/img/collection/img1.jpg"},
-      {"url":"./assets/img/collection/img2.jpg"},
-      {"url":"./assets/img/collection/img3.jpg"},
-      {"url":"./assets/img/collection/img4.jpg"},
-      {"url":"./assets/img/collection/img5.jpg"},
-      {"url":"./assets/img/collection/img6.jpg"},
-      {"url":"./assets/img/collection/img7.jpg"},
-      {"url":"./assets/img/collection/img8.jpg"}
+      {"url":"./assets/img/collection/img1.jpg",
+      "tab":"./assets/img/collection/tablet/image1.png",
+      "sp":"./assets/img/collection/sp/image1.jpg"},
+      {"url":"./assets/img/collection/img2.jpg",
+      "tab":"./assets/img/collection/tablet/image2.png",
+      "sp":"./assets/img/collection/sp/image2.jpg"},
+      {"url":"./assets/img/collection/img3.jpg",
+      "tab":"./assets/img/collection/tablet/image3.png",
+      "sp":"./assets/img/collection/sp/image3.jpg"},
+      {"url":"./assets/img/collection/img4.jpg",
+      "tab":"./assets/img/collection/tablet/image4.png",
+      "sp":"./assets/img/collection/sp/image4.jpg"},
+      {"url":"./assets/img/collection/img5.jpg",
+      "tab":"./assets/img/collection/tablet/image5.png",
+      "sp":"./assets/img/collection/sp/image5.jpg"},
+      {"url":"./assets/img/collection/img6.jpg",
+      "tab":"./assets/img/collection/tablet/image6.png",
+      "sp":"./assets/img/collection/sp/image6.jpg"},
+      {"url":"./assets/img/collection/img7.jpg",
+      "tab":"./assets/img/collection/tablet/image7.png",
+      "sp":"./assets/img/collection/sp/image7.jpg"},
+      {"url":"./assets/img/collection/img8.jpg",
+      "tab":"./assets/img/collection/tablet/image8.png",
+      "sp":"./assets/img/collection/sp/image8.jpg"}
     ],
     "modals":[
       {"url":"./assets/img/collection/modal/modal1.jpg"},
@@ -135,7 +164,7 @@
     "title1": "もうすぐ創業50年、",
     "title2": "あなたのキャリアプランもしっかり考えています。",
     "des1":"世間では、終身雇用が保証されにくい世の中になってきました。",
-    "des2":"その中で、「長く勤めることができる会社」「手に職をつけられる業種」は、キャリア形成にも影響します。",
+    "des2":"その中で、「長く勤めることができる会社」「手に職をつけられる業種」は、<br class='u-breakline'>キャリア形成にも影響します。",
     "des3":"人が生きている以上、家や建物を建てることは無くなりません。",
     "des4":"また、古くなった建物を部分的に改修することは増えていきます。",
     "des5":"その時にあなたがエクステリア業界のプロになっていれば、たくさんの生きる道を作ることができます。",
@@ -154,7 +183,7 @@
         "heading":"入社1年目",
         "description":[
           {
-            "des":"たくさんの現場を経験し、いろんな先輩社員と接することで、まずは一通りの作業内容と現場作業の流れを把握します。"
+            "des":"たくさんの現場を経験し、いろんな先輩社員と接することで、まずは一通りの作業内容と現場作業の流れを把握しま<span class='u-fixfont'>す。</span>"
           }
         ]
       },
@@ -191,10 +220,19 @@
   },
   "benefit":{
     "imgs":[
-      {"url":"./assets/img/career/benefit/benefit1.jpg"},
-      {"url":"./assets/img/career/benefit/benefit2.jpg"},
-      {"url":"./assets/img/career/benefit/benefit3.jpg"},
-      {"url":"./assets/img/career/benefit/benefit4.jpg"}
+      {"url":"./assets/img/career/benefit/benefit1.jpg",
+      "tab":"./assets/img/career/benefit/tablet/benefit1.jpg",
+      "sp":"./assets/img/career/benefit/sp/benefit1.jpg"},
+      {"url":"./assets/img/career/benefit/benefit2.jpg",
+      "tab":"./assets/img/career/benefit/tablet/benefit2.jpg",
+      "sp":"./assets/img/career/benefit/sp/benefit2.jpg"},
+      {"url":"./assets/img/career/benefit/benefit3.jpg",
+      "tab":"./assets/img/career/benefit/tablet/benefit3.jpg",
+      "sp":"./assets/img/career/benefit/sp/benefit3.jpg"
+    },
+      {"url":"./assets/img/career/benefit/benefit4.jpg",
+      "tab":"./assets/img/career/benefit/tablet/benefit4.jpg",
+      "sp":"./assets/img/career/benefit/sp/benefit4.jpg"}
     ],
     "title1":"充実した福利厚生サービス",
     "list1":[
@@ -237,7 +275,7 @@
         "heading":"賞与あり（夏・冬 年2回）"
       }
     ],
-    "title2":"独立支援制度も充実!20代でも独立可能",
+    "title2":"独立支援制度も充実!<br class='u-breakline'>20代でも独立可能",
     "list2":[
       {
         "heading":"独立支援制度",
@@ -258,18 +296,24 @@
     "list":[
       {
         "img":"./assets/img/interview/senior1.jpg",
+        "tab":"./assets/img/interview/tablet/senior1.jpg",
+        "sp":"./assets/img/interview/sp/senior1.jpg",
         "title":"いつも明るく元気に作業。朝も一番に出勤してます！",
         "name":"安川　聖 (30)",
         "exp":"入社2年目・外構担当職人　"
       },
       {
         "img":"./assets/img/interview/senior2.jpg",
+        "tab":"./assets/img/interview/tablet/senior2.jpg",
+        "sp":"./assets/img/interview/sp/senior2.jpg",
         "title":"職長として土木・外構工事の現場管理をしながら作業指示",
         "name":"福元　和稔 (45)",
         "exp":"入社3年目・土木、外構担当職長"
       },
       {
         "img":"./assets/img/interview/senior3.jpg",
+        "tab":"./assets/img/interview/tablet/senior3.jpg",
+        "sp":"./assets/img/interview/sp/senior3.jpg",
         "title":"高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",
         "name":"工藤　智成(41)",
         "exp":"入社23年目・外構部長"
@@ -354,6 +398,8 @@
     "title": "代表メッセージ",
     "subtitle":"「学歴・経験不問。ポテンシャル重視で採用」",
     "img":"./assets/img/interview/representative.jpg",
+    "tab":"./assets/img/interview/tab_representative.jpg",
+    "sp":"./assets/img/interview/sp_representative.jpg",
     "descriptions":[
       {
       "description":"弊社は、｢お客様に喜ばれる仕事をしよう｣という会社理念を掲げて社会貢献事業を行なっています。何か仕事で困った事があってもお客様の立場や、気持ちを考えれば社員一同、同じ方向を向いて仕事が出来ます。"
@@ -373,15 +419,14 @@
         "feel":"自分の作品として最低でも50年は施工場所が残る仕事です。"
       },
       {
-        "feel":"大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、"
-      },
-      {
-        "feel":"とても嬉しくて遣り甲斐のある仕事です。"
+        "feel":"大切な家族や友人に、自分が施工した自慢の作品がすぐに理解できて貰える喜びが、<br class='u-breakline--tablet'>とても嬉しくて遣り甲斐のある仕事です。"
       }
     ],
     "author": "株式会社ENTEX　代表取締役社長　遠藤 剛",
     "company":"社名の由来",
     "logo":"./assets/img/interview/logo.png",
+    "tablogo":"./assets/img/interview/tablogo.png",
+    "splogo":"./assets/img/interview/splogo.png",
     "brandinfo":[
       {
       "name":"EN",

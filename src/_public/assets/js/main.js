@@ -1,11 +1,3 @@
-// $('.c-mainvisual__slider').not('.slick-initialized').slick({
-//   fade: true,
-//   speed: 1100,
-//   infinite: true,
-//   autoplay: true,
-//   cssEase: "linear",
-//   arrows: false,
-//   });
 $(function () {
   slideinout();
 });
@@ -42,12 +34,22 @@ function slideinout() {
 }
 //SCROLL BUTTON
 $(".c-mainvisual__scrolltext--top").on("click", function () {
-    $("html, body").animate(
+  var page = $("html,body")
+  if ($(window).width() > 1024 ){    
+    page.animate(  
       {
         scrollTop: 900,
       },
       1000
-    );
+      );
+    } else{
+      page.animate(  
+        {
+          scrollTop: 820,
+        },
+        1000
+        );
+    }
   });
 //SCROLL ANIMATE
   $(".c-gnav__item").each(function (i) {

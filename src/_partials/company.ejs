@@ -9,13 +9,25 @@
         <tr class="c-table__row c-table__row--<%=i+1%>">
           <th class="c-table__head"><%= content.th%></th>
           <% if (content.td) { %>
-          <td class="c-table__description">
-            <% content.td && content.td.forEach((item) => { %>
-            <span class="c-table__description--item"
-              ><%- item.text %></span
-            ><br>
-            <%})%>
-          </td>
+            <% if(content.th == "電話番号"){ %>
+              <td class="c-table__description">
+                <a href="tel:0798-23-6600" class="c-table__phonenumber">
+                      <% content.td && content.td.forEach((item) => { %>
+                        <span class="c-table__description--item"
+                        ><%- item.text %></span
+                        ><br>
+                        <%})%>
+                </a>
+              </td>
+              <% } else{ %>  
+                <td class="c-table__description">
+                  <% content.td && content.td.forEach((item) => { %>
+                  <span class="c-table__description--item"
+                    ><%- item.text %></span
+                  ><br>
+                  <%})%>
+                </td>
+              <% } %>
           <%}%>
         </tr>
         <%})%>

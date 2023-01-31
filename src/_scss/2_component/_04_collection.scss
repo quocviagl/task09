@@ -16,6 +16,8 @@
 
         .c-collection__content {
             margin: 73px auto;
+
+            
         }
 
         .c-collection__modalcontent {
@@ -54,7 +56,9 @@
 
 .c-collection {
     margin-top: 90px;
-
+    @include tab {
+        margin-top: 52px;
+    }
 
     .c-collection__heading {
         text-align: center;
@@ -70,6 +74,9 @@
             font-weight: 400;
             letter-spacing: 0.024em;
             margin-top: 12px;
+            @include tab {
+                margin-top: 8px;
+            }
         }
     }
 
@@ -79,6 +86,13 @@
         border: 1px solid #0080cc;
         justify-content: center;
         padding: 39px 38px 17px 40px;
+        @include tab {
+            max-width: 730px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 35px;
+            padding: 19px 20px 20px;
+        }
     }
 
     .c-collection__item {
@@ -88,6 +102,9 @@
         &--video {
             width: 55%;
             margin-right: 3px;
+            @include tab {
+                margin-right: 5px;
+            }
         }
 
         &--imgbox {
@@ -102,6 +119,9 @@
             width: 96%;
             height: 96%;
             object-fit: cover;
+            @include tab {
+                height: 100%;
+            }
         }
 
         .c-collection__img {
@@ -109,6 +129,23 @@
             cursor: pointer;
             transition: opacity 0.3s;
             position: relative;
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                @include tab {
+                    margin-bottom: 21px;
+                }
+            }
+
+            &:nth-child(7),
+            &:nth-child(8) {
+                @include tab {
+                    margin-bottom: 0px;
+                }
+            }
+            @include tab {
+                margin-bottom: 22px;
+            }
 
             &::before {
                 width: 100%;

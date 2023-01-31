@@ -11,7 +11,11 @@
     align-items: center;
     padding: 12px 21px;
     background: rgba(255, 255, 255, 0.9);
-
+    @include tab {
+        flex-wrap: wrap;
+        padding: 20px 21px 0;
+        position: relative;
+    }
 
     .c-header__logolink {
         display: block;
@@ -21,10 +25,16 @@
         margin: 11px auto 0;
         max-width: 720px;
         flex: 1 1 auto;
+        @include tab {
+            width: 100%;
+            margin: 25px 20px 0;
+            max-width: 1023px;
+        }
 
         .c-gnav__menu {
             display: flex;
             justify-content: space-between;
+
         }
     
         .c-gnav__item {
@@ -37,19 +47,21 @@
 
             &:first-child {
                 margin-left: 58px;
+                @include tab {
+                    margin-left: 0;
+                }
             }
 
-            &:nth-child(3) {
-                transform: translateX(10px);
-            }
-
-            &:nth-child(4) {
-                transform: translate(10px);
-            }
-
+            &:nth-child(3),
+            &:nth-child(4),
             &:nth-child(5) {
-                transform: translate(10px);
+                transform: translateX(10px);
+                @include tab {
+                    transform: translateX(0);
+
+                }
             }
+
         }
 
         .c-gnav__link {
@@ -58,6 +70,10 @@
             font-weight: 400;
             text-align: center;
             transition: none;
+            @include tab {
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
         }
         
     }
@@ -73,6 +89,16 @@
         letter-spacing: 2px;
         border-radius: 10px;
         margin-left: 20px;
+        @include tab {
+            position: absolute;
+            right: 20px;
+            margin-top: 7px;
+            font-size: 1.6rem;
+            padding: 9px 28px 7px 29px;
+            font-weight: 500;
+            top: 13px;
+            margin-left: 0;
+        }
 
         &::before {
             display: block;
@@ -81,6 +107,10 @@
             width: 20px;
             height: 20px;
             padding-right: 8px;
+            @include tab {
+                position: relative;
+                left: -4px;
+            }
         }
     }
 }

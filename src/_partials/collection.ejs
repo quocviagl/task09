@@ -14,7 +14,11 @@
                     <% if (typeof collection != 'undefined') { %>
                         <% collection.imgs && collection.imgs.forEach(img => { %>
                             <figure class="c-collection__img">
-                                <img src="<%= img.url %>" alt="<%= collection.title %>">
+                                <picture>
+                                  <source media="(max-width:767px)" srcset="<%=img.sp%>">
+                                  <source media="(max-width:1024px)" srcset="<%=img.tab%>">
+                                  <img src="<%= img.url %>" alt="<%= collection.title %>">
+                                </picture>
                             </figure>
                         <%})%>
                     <%}%>
