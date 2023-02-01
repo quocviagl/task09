@@ -18,6 +18,7 @@
       <% linklists.subpage && linklists.subpage.forEach(item => { %>
         <a class="c-gnav__recruit u-bgblue u-textwhite" <% if (item.current || item.active) { %>class="is-active"<% } %> href="<%= item.url %>"><%= item.title %></a>
     <% }) %>
+        <div class="c-gnav__spmenu sp-only"><img src="./assets/img/spmenu.svg" alt="Entex Recruitment"></div>
     <%}%>
 
     </div>

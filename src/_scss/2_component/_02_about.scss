@@ -14,6 +14,10 @@
             height: calc(100% + 93px);
             top: -31px;
         }
+        @include sp {
+            width: 97.3%;
+            height: calc(100% + 87px);
+        }
     }
 
     
@@ -23,6 +27,11 @@
         justify-content: flex-end;
         @include tab {
             padding: 29px 20px 0 16px;
+        }
+        @include sp {
+            flex-direction: column-reverse;
+            padding: 29px 20px 0 18px;
+
         }
     }
     
@@ -35,7 +44,11 @@
             margin-right: 10px;
             margin-top: 24px;
         }
-    
+        @include sp {
+            margin-right: 10px;
+            margin-top: 34px;
+        }
+
         .c-about__title {
             font-size: 3.4rem;
             font-weight: 500;
@@ -43,6 +56,10 @@
             @include tab {
                 font-size: 3rem;
                 letter-spacing: 0.054em;
+            }
+            @include sp {
+                font-size: 2.4rem;
+                margin-left: 2px;
             }
         }
     
@@ -57,11 +74,18 @@
                 margin-top: 11px;
                 margin-left: 2px;
             }
+            @include sp {
+                font-size: 1.4rem;
+                line-height: 1.55;
+            }
 
             &:not(:first-child) {
                 margin-top: 28px;
                 @include tab {
                     margin-top: 27px;
+                }
+                @include sp {
+                    margin-top: 23px;
                 }
             }
         }
@@ -74,27 +98,60 @@
         @include tab {   
             max-width: 325px;
         }
+        @include sp {
+            max-width: 375px;
+        }
     
         .c-about__img {
             position: relative;
 
-            &::before {
-                position: absolute;
-                content: "";
-                width: inherit;
-                height: inherit;
-                background-color: #0080cc;
-                left: 0;
+            &::after {
+                @include sp {
+
+                    content: "";
+                    position: absolute;
+                    max-width: 331px;
+                    width: 100%;
+                    display: block;
+                    border: 2px solid #fff;
+                    height: 356px;
+                    left: -2.9%;
+                    z-index: 2;
+                    top: 5%;
+                    height: 98.4%;
+                }
             }
 
             &--top {
                 margin-bottom: 21px;
+                @include sp {
+                    top: -13px;
+                    left: 2px;
+                    margin-bottom: 26px;
+                }
 
             }
+
+            &--bottom {
+                @include sp {
+                    top: -5px;
+                    left: 0;
+                
+                }
+
+                &::after {
+                    @include sp {
+                        left: -2%;
+                        z-index: 2;
+                        top: 2.5%;
+                        height: 98.4%;
+                    }
+                }
+            }
         }
-    }
 
-}    
-
+    }    
 
 
+
+}

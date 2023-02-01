@@ -177,6 +177,10 @@
     @include tab {
         height: 97.7vh;
     }
+    @include sp {
+        min-height: 70.6vh;
+        height: 70.6vh;
+    }
 
     .c-mainvisual__inner {
         position: absolute;
@@ -187,12 +191,19 @@
             top: 34.8%;
             left: 41px;
         }
+        @include sp{
+            top: 29.5%;
+            left: 5.4%;
+        }
     }
 
     .c-mainvisual__wrapper {
         height: 100%;
         @include tab {
             height: 96%;
+        }
+        @include sp{
+            height: 96.2%;
         }
     }
 
@@ -214,7 +225,9 @@
         @include tab {
             font-size: 4rem;
         }
-
+        @include sp{
+            font-size: 2.8rem;
+        }
         &--span {
             height: calc((100% - 34px) / 3);
             letter-spacing: 0.11em;
@@ -228,6 +241,9 @@
                 padding: 0 10px 0 8px;
                 top: 2px;
             }
+            @include sp{
+                padding: 3px 10px 0 5px;
+            }
         }
 
         &--middle {
@@ -236,6 +252,10 @@
             letter-spacing: 0.05em;
             @include tab {
                 padding: 0 10px 0 8px;
+            }
+            @include sp{
+                letter-spacing: 0.01em;
+                padding: 3px 7px 0 5px;
             }
         }
 
@@ -246,6 +266,10 @@
             @include tab {
                 top: 3px;
                 padding: 0 0 0 9px;
+            }
+            @include sp{
+                letter-spacing: 0.045em;
+                padding: 0px 4px 2px 9px;
             }
         }
     }
@@ -263,6 +287,12 @@
             bottom: 30px;
             max-width: 687px;
         }
+        @include sp{
+            height: 74px;
+            bottom: 24px;
+            max-width: 95%;
+            padding: 0 32px;
+        }
     }
 
     .c-mainvisual__scrolltext {
@@ -274,7 +304,10 @@
             font-size: 2.2rem;
             margin: -8px 0 0 4px;
         }
-
+        @include sp{
+            font-size: 1.8rem;
+            letter-spacing: 0.02em;
+        }
         &--top {
             text-transform: uppercase;
             font-size: 2rem;
@@ -288,7 +321,11 @@
                 top: -56px;
                 left: 8px;
             }
-
+            @include sp {
+                font-size: 1.6rem;
+                top: -41px;
+                left: 0px;
+            }
             &::before {
                 content: "";
                 position: absolute;
@@ -297,6 +334,10 @@
                 height: 30px;
                 width: 2px;
                 background-color: #0080cc;
+                @include sp{
+                    top: 28px;
+                    left: 46%;
+                }
             }
         }
     }

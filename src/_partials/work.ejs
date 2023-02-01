@@ -8,11 +8,13 @@
         <div class="c-work__imgbox">
           <% if (typeof work != 'undefined') { %>
             <% work.imgs && work.imgs.forEach((img,i) => { %>
+              <div class="c-work__img c-work__img--<%=i+1%>">
                 <picture>
-                  <source media="(max-width:767px)" srcset="<%=img.sp%>">
+                  <source media="(max-width:767px)" srcset="<%=img.url%>">
                   <source media="(max-width:1024px)" srcset="<%=img.tab%>">
-                  <img src="<%= img.url %>" alt="<%= work.listtitle %> " class="c-work__img--<%=i+1%>">
+                  <img src="<%= img.url %>" alt="<%= work.listtitle %>">
                 </picture>
+              </div>
             <%})%>
           <%}%>
         </div>

@@ -140,7 +140,7 @@
             &:nth-child(7),
             &:nth-child(8) {
                 @include tab {
-                    margin-bottom: 0px;
+                    margin-bottom: 0;
                 }
             }
             @include tab {

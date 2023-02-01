@@ -61,12 +61,12 @@
     "img2":"./assets/img/about/about2.png",
     "tabimg1":"./assets/img/about/tabletabout1.png",
     "tabimg2":"./assets/img/about/tabletabout2.png",
-    "spimg1":"./assets/img/about/spabout1.png",
-    "spimg2":"./assets/img/about/spabout2.png"
+    "spimg1":"./assets/img/about/spabout1.jpg",
+    "spimg2":"./assets/img/about/spabout2.jpg"
   },
   "work":{
     "title":"私たちの仕事",
-    "subtitle":"エクステリアのプロ集団と言っても、仕事内容はさまざまです。<br>仕事をしていく上で、「あなたの興味のあること」「向いていること」が見つけられるかもしれません。",
+    "subtitle":"エクステリアのプロ集団と言っても、<br class='sp-only'>仕事内容はさまざまです。<br>仕事をしていく上で、「あなたの興味のあること」<br class='sp-only'>「向いていること」が見つけられるかもしれません。",
     "listtitle":"仕事内容の紹介",
     "listsubtitle":"屋外での現場作業をメインに行ないます。",
     "imgs":[

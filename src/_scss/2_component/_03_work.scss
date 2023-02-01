@@ -4,6 +4,9 @@
     @include tab {
         margin-top: 113px;
     }
+    @include sp {
+        margin-top: 89px;
+    }
 
     &::before {
         content: "";
@@ -37,6 +40,10 @@
             font-size: 3rem;
             letter-spacing: 0.054em;
         }
+        @include sp {
+            margin-bottom: 0;
+            font-size: 2.4rem;
+        }
     }
 
     .c-work__subtitle {
@@ -47,6 +54,12 @@
         @include tab {
             font-size: 1.4rem;
             line-height: 1.75;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            padding: 0 14px;
+            line-height: 1.55;
+
         }
     }
 
@@ -60,6 +73,13 @@
         margin-top: 37px;
         padding: 0 20px;
     }
+    @include sp {
+        display: flex;
+        flex-direction: column;
+        margin-top: 34px;
+        padding-right: 0;
+        padding-left: 2.5%;
+    }
 
     .c-work__imgbox {
         max-width: 400px;
@@ -69,11 +89,23 @@
             max-width: 288px;
             margin-right: 20px;
         }
+        @include sp {
+            max-width: inherit;
+            display: flex;
+            flex-wrap: wrap;
+        }
 
         .c-work__img {
             @include tab {
                 &--2 {
                     margin-top: -9px;
+                }
+            }
+            @include sp {
+                width: 50%;
+
+                &--2 {
+                    margin-top: 0;
                 }
             }
         }
@@ -202,6 +234,9 @@
             letter-spacing: 0.054em;
             margin-bottom: 5px;
         }
+        @include sp {
+            font-size: 2.4rem;
+        }
     }
 
     .c-work__listsubtitle {
@@ -209,6 +244,9 @@
         font-weight: 400;
         letter-spacing: 0.024em;
         @include tab {
+            font-size: 1.4rem;
+        }
+        @include sp {
             font-size: 1.4rem;
         }
     }
@@ -235,6 +273,9 @@
             font-size: 1.6rem;
             letter-spacing: 0.022em;
             padding-left: 19px;
+        }
+        @include sp {
+            font-size: 1.4rem;
         }
     }
 }

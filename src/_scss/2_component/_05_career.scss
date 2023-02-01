@@ -173,6 +173,7 @@
                     padding-top: 6px;
 
                 }
+
                 .c-career__processdesc {
                     @include tab {
                         margin-top: 4px;
@@ -280,6 +281,7 @@
         @include tab {
             max-width: 97.4%;
         }
+
         .u-breakline {
             display: none;
             @include tab {
@@ -318,16 +320,18 @@
             max-width: 288px;
             align-content: flex-start;
         }
+
         .c-benefit__img {
             max-height: 310px;
             width: 100%;
             object-fit: cover;
         }
-        picture:nth-of-type(1){
-            .c-benefit__img{
+
+        picture:nth-of-type(1) {
+            .c-benefit__img {
                 margin-bottom: -46px;
-                @include tab{
-                    margin-bottom: 0px;
+                @include tab {
+                    margin-bottom: 0;
                 }
             }
         }

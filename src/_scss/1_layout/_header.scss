@@ -16,9 +16,15 @@
         padding: 20px 21px 0;
         position: relative;
     }
+    @include sp {
+        padding: 10px;
+    }
 
     .c-header__logolink {
         display: block;
+        @include sp {
+            width: 75%;
+        }
     }
 
     .c-gnav {
@@ -29,6 +35,9 @@
             width: 100%;
             margin: 25px 20px 0;
             max-width: 1023px;
+        }
+        @include sp {
+            display: none;
         }
 
         .c-gnav__menu {
@@ -99,6 +108,16 @@
             top: 13px;
             margin-left: 0;
         }
+        @include sp {
+            position: static;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 7px 11px;
+            margin-top: 4px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
 
         &::before {
             display: block;
@@ -111,7 +130,15 @@
                 position: relative;
                 left: -4px;
             }
+            @include sp {
+                left: 3px;
+            }
+
         }
+    }
+
+    .c-gnav__spmenu {
+        margin-top: 4px;
     }
 }
 
